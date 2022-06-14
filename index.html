@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="text-white font-[Ubuntu]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/e03a9c76a7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body
+    class="w-full h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
+  >
+    <nav class="w-full bg-black/20 border-b border-slate-300/10 shadow">
+      <div class="flex sm:flex-row flex-col max-w-7xl mx-auto relative">
+        <div class="py-2 px-4 flex grow justify-between">
+          <div class="flex cursor-pointer">
+            <a href="/"
+              ><i class="fa-solid fa-laptop-code sm:text-2xl text-lg"></i>
+              <span class="ml-2 sm:text-xl text-base">Codemanity</span>
+            </a>
+          </div>
+          <div class="sm:hidden">
+            <i
+              id="nav-button"
+              class="fa-solid fa-ellipsis sm:text-2xl text-lg"
+            ></i>
+          </div>
+        </div>
+        <div
+          id="mobile-nav"
+          class="sm:w-fit w-1/2 sm:flex hidden sm:flex-row flex-col items-center sm:static absolute right-0 sm:bg-inherit bg-black/20 sm:border-0 border-t-0 border-r-0 border border-slate-300/10"
+        >
+          <div class="sm:w-fit w-full flex sm:flex-row flex-col">
+            <a href="#" class="py-2 px-4 text-lg hover:text-sky-500 text-center"
+              >About</a
+            >
+            <a href="#" class="py-2 px-4 text-lg hover:text-sky-500 text-center"
+              >Projects</a
+            >
+            <a href="#" class="py-2 px-4 text-lg hover:text-sky-500 text-center"
+              >Contact</a
+            >
+          </div>
+          <div
+            class="px-4 sm:py-0 py-2 flex items-center justify-center sm:border-l sm:border-t-0 border-l-0 border-t sm:w-fit w-full border-slate-300/10"
+          >
+            <p class="mr-2 sm:hidden inline">Dark</p>
+            <i class="fa-solid fa-circle-half-stroke hover:text-sky-500"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

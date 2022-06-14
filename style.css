@@ -1,0 +1,7 @@
+:root {
+  --navHeight: 5rem;
+}
+
+#mobile-nav {
+  top: var(--navHeight);
+}/*# sourceMappingURL=style.css.map */
